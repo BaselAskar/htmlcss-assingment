@@ -3,10 +3,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   display: grid;
-  grid-template-areas: 'header header header header header header' 
-                        'main main main main aside aside'
-                        'footer footer footer footer footer footer';
-                        
+  grid-template-areas: 'header header header' 'main main aside' 'footer footer footer';
 }
 
 
@@ -15,6 +12,7 @@ header{
   justify-content: space-between;
   background-color: #ac5fd2;
   grid-area: header;
+  box-shadow: 0 0.8rem 10px rgb(199, 198, 198);
 }
 
 header h1{
@@ -43,24 +41,43 @@ header ul{
   cursor: pointer;
   font-weight: bold;
   margin: auto 1rem;
+  background-color: brown;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  transition: all 0.3s ease-in;
+}
+
+.login:hover{
+  color: white;
+  background-color: rgb(129, 33, 33);
 }
 
 main{
   grid-area: main;
-  word-wrap: break-word;
+  padding: 3rem;
+}
+
+.image-container{
+  text-align: center;
+}
+
+main img{
+  border-radius: 10px;
 }
 
 aside{
   grid-area: aside;
   background-color: #af7dc8;
+  grid-area: aside;
 }
 
 aside h2{
-  padding: 0.5rem 5rem;
+  padding: 0 5rem;
 }
 
 aside li{
-  list-style: none;
+  list-style-type: none;
+
   text-align: center;
   padding: 1rem;
 }
@@ -68,11 +85,18 @@ aside li{
 aside a{
   text-decoration: none;
   color: rgb(66, 38, 1);
+  transition: color 0.3s ease-in;
+}
+
+aside a:hover{
+  color: white;
 }
 
 footer{
   grid-area: footer;
-  background-color: #b294c2;
+  background-color: #d4b6e4;
   padding: 2rem;
+  grid-area: footer;
+  height: 200px;
 }
 
