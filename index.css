@@ -1,0 +1,51 @@
+body{
+  display: grid;
+  grid-template-areas: 'header header header' 'main main aside' 'footer footer footer';
+}
+
+
+
+.image-container{
+  text-align: center;
+}
+
+main h2{
+  padding: 1rem 0;
+}
+
+main img{
+  border-radius: 10px;
+}
+
+.articles{
+  padding: 4rem 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+aside{
+  grid-area: aside;
+  background-color: var(--primary-700-color);
+  grid-area: aside;
+}
+
+aside h2{
+  padding: 1rem 5rem;
+}
+
+aside li{
+  list-style-type: none;
+
+  text-align: center;
+  padding: 1rem;
+}
+
+aside a{
+  text-decoration: none;
+  color: rgb(66, 38, 1);
+  transition: color 0.3s ease-in;
+}
+
+aside a:hover{
+  color: white;
+}
